@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fnb</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<article class="screen">
+		<input type="checkbox" value="None" id="magicButton" name="check" />
+		<label class="main" for="magicButton"></label>
+		<div class="coverImage"></div>
+		<div class="bodyPlayer"></div>
+		<ul class="list moveable" id="items-list" style="padding: 0;">
+		</ul>
+		<button type="button" class="btn btn-purple waves-effect" id="btnAdd" title="Add Playlist"  ><i class="fa fa-plus" aria-hidden="true" style="margin-right: 5px;"></i>Add Playlist</button>
+				
+				<div class="shadow"></div>
+				
+				<div class="bar"></div>
+				
+				<div class="info">
+					<h4>Black Coffee</h4>
+					<h3>I know what's on your mind</h3>
+				</div>
+<audio preload="auto" id="audio" controls>
+  <source src="">
+  <source src="">
+	</audio>
+				<table class="player">
+					<td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
+					<td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
+					<td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
+				</table>
+				
+				<table class="footer">
+					<td><input type="checkbox" id="love" checked /><label class="love" for="love"></label></td>
+					<td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+					<td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+					<td><input type="checkbox" id="options"/><label class="options" for="options"></label></td>
+				</table>
+				
+				<div class="current"><h2>Black Coffee</h2></div>
+				
+			
+		</article>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
